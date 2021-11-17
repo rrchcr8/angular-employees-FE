@@ -13,7 +13,7 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule, HttpClientModule, FormsModule
   ],
-  providers: [EmployeeService],
+  //providers: [EmployeeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
