@@ -59,7 +59,7 @@ export class AppComponent implements OnInit {
     );
   }
 
-  public onDeleteEmloyee(employeeId: any): void {
+  public onDeleteEmloyee(employeeId: number): void {
     this.employeeService.deleteEmployee(employeeId).subscribe(
       (response: void) => {
         console.log(response);
@@ -93,7 +93,7 @@ export class AppComponent implements OnInit {
     }
   }
 
-  public onOpenModal(employee: any, mode: string): void {
+  public onOpenModal(employee: Employee | any, mode: string): void {
     const container = document.getElementById('main-container');
     const button = document.createElement('button');
     button.type = 'button';
